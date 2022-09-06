@@ -4,12 +4,14 @@
   --accent-color: #2196f3;
   --primary-background-color: #ffffff;
   --secondary-background-color: #2f303a;
+  --primary-logo-color: #000000;
+  --contact-color: rgba(255, 255, 255, 0.6);
+  --primary-btn-color: #f5f4fa;
 }
 
 body {
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   letter-spacing: 0.03em;
 }
 
@@ -26,12 +28,12 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1, 19;
   text-decoration: none;
 }
 
 .logo.logo-header {
-  color: #000000;
+  color: var(--primary-logo-color);
 }
 
 .logo.logo-footer {
@@ -44,10 +46,18 @@ body {
 
 .site-nav .link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.4;
 }
 
 .auth-nav .link {
   color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.4;
 }
 
 .link:hover,
@@ -61,18 +71,27 @@ body {
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--primary-background-color);
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
 }
 
 .btn {
-  color: #ffffff;
+  color: var(--primary-background-color);
   background-color: var(--accent-color);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.87;
+  cursor: pointer;
+}
+
+.hero-section > .btn:hover,
+.hero-section > .btn:focus {
+  color: var(--accent-color);
+  background-color: var(--primary-background-color);
 }
 
 .visually-hidden {
@@ -91,33 +110,44 @@ body {
 .benefit-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
+}
+
+.title {
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .title-text {
   color: var(--secondary-text-color);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
 }
 
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.16;
 }
 
+.section-team {
+  background-color: var(--primary-btn-color);
+}
+
+.team-list {
+  background-color: var(--primary-background-color);
+}
 .team-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.18;
 }
 
 .team-title-text {
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.18;
 }
 
 /* background-color використаний не зовсім вірно, просто щоб було видно білий текст */
@@ -130,20 +160,31 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
 }
 
 .contact-address.link {
-  color: #ffffff;
+  color: var(--primary-background-color);
 }
 
+.contact-address:hover,
+.contact-address:focus {
+  color: var(--accent-color);
+}
 .contact-item.link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contact-color);
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--accent-color);
 }
 
 .primary-btn {
+  font-family: inherit;
   color: var(--primary-text-color);
-  background-color: rgb(227, 229, 226);
+  background-color: var(--primary-btn-color);
+  cursor: pointer;
 }
 
 .primary-btn:hover,
@@ -156,12 +197,12 @@ body {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.18;
 }
 
 .potfolio-text {
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.18;
 }
